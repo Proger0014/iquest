@@ -1,0 +1,46 @@
+$default-theme: (
+    colorComponents: map-get($colors, white),
+    colorOnComponents1: map-get($colors, black),
+    colorOnComponents2: map-get($colors, blue-light_1),
+
+    colorInputBorder: map-get($colors, white-gray_2),
+    colorInputText: map-get($colors, gray-2),
+
+    colorButton1: map-get($colors, blue-light_1),
+    colorOnButton1: map-get($colors, gray-light_1),
+    colorButton1Varaint: map-get($colors, blue-light_2),
+    colorOnButton1Variant: map-get($colors, gray-light_1),
+    colorButton2: map-get($colors, gray-5),
+    colorOnButton2: map-get($colors, white),
+
+    colorBackground: map-get($colors, gray-light_1),
+
+    colorList: map-get($colors, white-2),
+
+    colorListTime: map-get($colors, gray-2),
+    colorListAvatarNick: map-get($colors, gray-green_1),
+    colorListCommentTitle: map-get($colors, gray-3),
+
+    colorAnswerTime: map-get($colors, gray-2),
+    colorAnswerAvatarNick: map-get($colors, gray-green_1),
+    colorAnswerCircle: map-get($colors, black),
+    colorAnswerLink: map-get($colors, blue-light_1),
+    colorAnswerLinkHover: map-get($colors, blue-light_2),
+
+    colorTextAreaPlaceHolder: map-get($colors, gray-2),
+
+    colorFormDescription: map-get($colors, gray-2),
+
+    colorBackgroundAnswerInputBottom: map-get($colors, gray-4),
+    colorBorderAnswerInput: map-get($colors, gray-4),
+
+    colorOnFooterHover: map-get($colors, gray-green_1),
+    colorFooterTop: map-get($colors, gray-dark_1),
+    colorOnFooterTop: map-get($colors, white),
+    colorFooterBottom: map-get($colors, gray-dark_2),
+    colorOnFooterBottom1: map-get($colors, gray_1),
+    colorOnFooterBottom2: map-get($colors, blue-light_2),
+
+    colorLinks: map-get($colors, blue-light_2),
+    colorLinksHover: map-get($colors, blue-light_1)
+);

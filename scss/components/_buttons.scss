@@ -1,0 +1,23 @@
+.btn {
+    padding: 6px 39px;
+    border-radius: map-get($radius, rounded);
+
+    &.btn-ref {
+        background-color: map-get($default-theme, colorButton1);
+        color: map-get($default-theme, colorOnButton1);
+
+        &:hover {
+            background-color: map-get($default-theme, colorButton1Varaint);
+        }
+    }
+
+    &.btn-answer {
+        background-color: map-get($default-theme, colorButton2);
+        color: map-get($default-theme, colorOnButton2);
+
+        &:hover {
+            background-color: map-get($default-theme, colorButton1Varaint);
+        }
+    }
+}
+

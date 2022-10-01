@@ -1,0 +1,14 @@
+.avatar {
+    display: flex;
+    align-items: center;
+
+    &__image {
+        img {
+            border-radius: map-get($radius, circle);
+        }
+    }
+
+    &__title {
+        padding-left: 16px;
+    }
+}

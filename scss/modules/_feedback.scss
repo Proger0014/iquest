@@ -1,0 +1,36 @@
+.feedback {
+
+    background-color: map-get($default-theme, colorComponents);
+
+    min-width: 630px;
+    min-height: 759px;
+
+    border-radius: map-get($radius, default);
+
+    &__title {
+        font-size: map-get($font-size, header-3);
+        padding-bottom: 47px;
+    }
+
+    &__inner {
+        padding: 65px 0 0 36px;
+
+        & > * {
+            width: 480px;
+        }
+    }
+
+    &__item {
+        padding-bottom: 20px;
+    }
+
+    &__description {
+        padding-top: 10px;
+        font-size: map-get($font-size, minimal);
+        color: map-get($default-theme, colorFormDescription);
+    }
+
+    &__message {
+        padding-bottom: 30px;
+    }
+}

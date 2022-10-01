@@ -1,0 +1,31 @@
+$fonts: (
+    arial: #{Arial, Helvetica, sans-serif},
+);
+
+$font-size: (
+    default: 16px,
+    header-1: 32px,
+    header-2: 25px,
+    header-3: 20px,
+    minimal: 14px,
+);
+
+@mixin setADefaultColor($color) {
+    a {
+        color: $color;
+    }
+}
+
+@mixin setColorsARef($color, $colorHover: $color, $colorActive: $colorHover) {
+    a {
+        color: $color;
+
+        &:hover {
+            color: $colorHover;
+        }
+
+        &:active {
+            color: $colorActive;
+        }
+    }
+}

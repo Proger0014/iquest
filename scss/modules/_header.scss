@@ -1,0 +1,21 @@
+header {
+    padding: 8px 63px;
+    
+    background-color: map-get($default-theme, colorComponents);
+    color: map-get($colors, colorOnComponents1);
+
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+
+    font-size: map-get($font-size, minimal);
+
+    @include setADefaultColor(map-get($default-theme, colorOnComponents1));
+
+    .link-ref {
+        @include setColorsARef(
+            map-get($default-theme, colorLinks),
+            map-get($default-theme, colorLinksHover)
+        );
+    }
+}

@@ -1,0 +1,23 @@
+// for footer
+.list {
+    .list__header {
+        padding-bottom: 12px;
+        &:after {
+            content: '';
+            display: block;
+    
+            margin-top: 9px;
+
+            padding: 1px;
+            background-color: map-get($default-theme, colorList);
+        }
+    }
+
+    .list__items {
+        @include setADefaultColor(map-get($default-theme, colorOnFooterTop));
+
+        a {
+            padding-bottom: 4px;
+        }
+    }
+}

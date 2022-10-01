@@ -1,0 +1,11 @@
+.comments-block {
+    padding: 16px;
+
+    border-radius: map-get($radius, default);
+
+    background-color: map-get($default-theme, colorComponents);
+
+    .text-area-input {
+        padding-bottom: 50px;
+    }
+}

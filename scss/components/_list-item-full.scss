@@ -1,0 +1,66 @@
+.list-item-full {
+
+    @include setADefaultColor(map-get($default-theme, colorOnComponents1));
+    
+    &__inner {
+        padding: 15px;
+        background-color: map-get($default-theme, colorComponents);
+        border-radius: map-get($radius, default);
+    }
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        padding-bottom: 8px;
+    }
+
+    &__user-info {
+        display: flex;
+        align-items: center;
+    }
+
+    &__user-avatar {
+        padding-right: 10px;
+
+        .avatar {
+            &__title {
+                color: map-get($default-theme, colorListAvatarNick);
+            }
+        }
+    }
+
+    &__time {
+        font-size: map-get($font-size, minimal);
+        color: map-get($default-theme, colorListTime);
+    }
+
+    &__comments {
+        .avatar {
+            &__image {
+                img {
+                    border-radius: 0;
+                }
+            }
+
+            &__title {
+                color: map-get($default-theme, colorListCommentTitle);
+                padding-left: 4px;
+                font-size: map-get($font-size, minimal);
+            }
+        }
+    }
+
+    &__bottom {
+        * {
+            padding-bottom: 8px;
+        }
+    }
+
+    &__image {
+        img {
+            border-radius: map-get($radius, default);
+        }
+    }
+}

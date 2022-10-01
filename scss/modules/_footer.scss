@@ -1,0 +1,47 @@
+footer {
+    .footer-top {
+        padding: 28px 0 12px;
+        background-color: map-get($default-theme, colorFooterTop);
+        color: map-get($default-theme, colorOnFooterTop);
+
+        &__inner {
+            display: flex;
+
+            .list {
+                padding-right: 72px;
+                &-container {
+                    width: 195px;
+                }
+
+                &__items {
+                    @include setColorsARef  (
+                        map-get($default-theme, colorOnFooterTop), 
+                        map-get($default-theme, colorOnFooterHover));
+
+                    .list__item {
+                        display: block;
+                        padding-bottom: 4px;
+                    }
+                }
+            }
+        }
+    }
+
+    .footer-bottom {
+        padding: 15px 0;
+
+        background-color: map-get($default-theme, colorFooterBottom);
+        color: map-get($default-theme, colorOnFooterBottom1);
+
+        &__inner {
+            @include setColorsARef(
+                map-get($default-theme, colorOnFooterBottom2),
+                map-get($default-theme, colorOnFooterHover));
+        }
+        
+        &__item {
+            display: inline-block;
+            margin-right: 111px;
+        }
+    }
+}

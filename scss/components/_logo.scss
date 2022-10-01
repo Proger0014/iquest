@@ -1,0 +1,13 @@
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: map-get($font-size, header-3);
+
+    &__image {
+        padding-right: 10px;
+
+        img {
+            border-radius: map-get($radius, circle);
+        }
+    }
+}

@@ -1,0 +1,11 @@
+.text-input {
+    border-radius: map-get($radius, input);
+
+    border: 1.5px solid map-get($default-theme, colorInputBorder);
+
+    padding: 14px;
+
+    &::placeholder {
+        color: map-get($default-theme, colorInputText);
+    }
+}

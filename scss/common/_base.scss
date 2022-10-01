@@ -1,0 +1,5 @@
+body {
+    background-color: map-get($default-theme, colorBackground);
+    font-family: map-get($fonts, arial);
+    font-size: map-get($font-size, default);
+}

@@ -1,0 +1,25 @@
+.list-item {
+
+    &__inner {
+        background-color: map-get($default-theme, colorComponents);
+    
+        padding: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    
+        border-radius: map-get($radius, default);
+    }
+
+    @include setADefaultColor(map-get($default-theme, colorOnComponents1));
+
+    &__title {
+
+    }
+
+    &__info {
+        img {
+            border-radius: 0;
+        }
+    }
+}
